@@ -1,6 +1,6 @@
 // Write the Movie type alias to make the following two variables properly typed
 // Make sure that "originalTitle" is optional and "title" is readonly
-type Movie = {
+type Movie1 = {
   readonly title: string;
   originalTitle?: string;
   director: string;
@@ -12,7 +12,7 @@ type Movie = {
   };
 };
 
-const dune: Movie = {
+const dune1: Movie = {
   title: "Dune",
   originalTitle: "Dune Part One",
   director: "Denis Villeneuve",
@@ -24,7 +24,7 @@ const dune: Movie = {
   },
 };
 
-const cats: Movie = {
+const cats1: Movie = {
   title: "Cats",
   director: "Tom Hooper",
   releaseYear: 2019,
@@ -54,5 +54,5 @@ function getProfit({ boxOffice: { grossWorldwide, budget } }: Movie): number {
   return grossWorldwide - budget;
 }
 
-console.log(getProfit(dune));
-console.log(getProfit(cats));
+console.log(getProfit(dune1));
+console.log(getProfit(cats1));

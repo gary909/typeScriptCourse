@@ -1,19 +1,19 @@
 // Num function
-function square (num: number){
+function square1 (num: number){
     return num * num;
 }
 square(3);
 
 
 // String Function
-function greet(person : string) {
+function greet3(person : string) {
     return 'Hi there, ${person}';
 }
 greet("Tom");
 
 
 // Arrow Function wwith 3 auguments
-const doSomething = (person: string, age: number, isFunny: boolean) => {};
+const doSomething1 = (person: string, age: number, isFunny: boolean) => {};
 doSomething("Chikenface", 12, true); // has to be in same order as above
 
 
